@@ -1,0 +1,208 @@
+[debug] [2023-12-20T09:00:44.603Z] ----------------------------------------------------------------------
+[debug] [2023-12-20T09:00:44.608Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\penta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-20T09:00:44.608Z] CLI Version:   13.0.2
+[debug] [2023-12-20T09:00:44.609Z] Platform:      win32
+[debug] [2023-12-20T09:00:44.609Z] Node Version:  v20.10.0
+[debug] [2023-12-20T09:00:44.609Z] Time:          Wed Dec 20 2023 16:00:44 GMT+0700 (Indochina Time)
+[debug] [2023-12-20T09:00:44.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-20T09:00:44.618Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T09:00:44.619Z] > authorizing via signed-in user (tuan.pham.set18@eiu.edu.vn)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Study\Web\Project
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-20T09:01:51.874Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-20T09:01:53.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-20T09:01:53.245Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project project-main-manufacture (Project main manufacture) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-12-20T09:01:59.862Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-12-20T09:01:59.862Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:02:01.330Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com 200
+[debug] [2023-12-20T09:02:01.330Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-12-20T09:02:01.331Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-12-20T09:02:01.331Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:02:02.720Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-12-20T09:02:02.720Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-12-20T09:02:12.731Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-12-20T09:02:12.731Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:02:14.043Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com 200
+[debug] [2023-12-20T09:02:14.043Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-12-20T09:02:14.051Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-main-manufacture [none]
+[debug] [2023-12-20T09:02:14.441Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-main-manufacture 200
+[debug] [2023-12-20T09:02:14.441Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-main-manufacture {"projectId":"project-main-manufacture","projectNumber":"1015318297520","displayName":"Project main manufacture","name":"projects/project-main-manufacture","resources":{"hostingSite":"project-main-manufacture"},"state":"ACTIVE","etag":"1_a905af4d-8070-4b86-abf7-d1ab8096833b"}
+[debug] [2023-12-20T09:02:30.359Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances databaseId=project-main-manufacture-default-rtdb&validateOnly=true
+[debug] [2023-12-20T09:02:30.359Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2023-12-20T09:02:32.092Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances 200
+[debug] [2023-12-20T09:02:32.092Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances {"name":"projects/1015318297520/locations/asia-southeast1/instances/project-main-manufacture-default-rtdb","project":"projects/1015318297520","databaseUrl":"https://project-main-manufacture-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-12-20T09:02:32.093Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances databaseId=project-main-manufacture-default-rtdb
+[debug] [2023-12-20T09:02:32.093Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2023-12-20T09:02:32.874Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances 200
+[debug] [2023-12-20T09:02:32.874Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/project-main-manufacture/locations/asia-southeast1/instances {"name":"projects/1015318297520/locations/asia-southeast1/instances/project-main-manufacture-default-rtdb","project":"projects/1015318297520","databaseUrl":"https://project-main-manufacture-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-12-20T09:02:53.111Z] >>> [apiv2][query] GET https://project-main-manufacture-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-12-20T09:02:54.842Z] <<< [apiv2][status] GET https://project-main-manufacture-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-12-20T09:02:54.842Z] <<< [apiv2][body] GET https://project-main-manufacture-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for project-main-manufacture-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-12-20T09:02:54.847Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firestore.googleapis.com [none]
+[debug] [2023-12-20T09:02:54.847Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firestore.googleapis.com x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:02:56.217Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firestore.googleapis.com 200
+[debug] [2023-12-20T09:02:56.217Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/firestore.googleapis.com [omitted]
+[debug] [2023-12-20T09:02:56.218Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default) [none]
+[debug] [2023-12-20T09:02:57.486Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default) 200
+[debug] [2023-12-20T09:02:57.486Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default) {"name":"projects/project-main-manufacture/databases/(default)","uid":"9c395fbf-67b1-4f54-b3c5-dce546381810","createTime":"2023-12-13T05:09:34.839585Z","updateTime":"2023-12-13T05:09:34.839585Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-12-20T08:02:56.116160Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMPl4v3TnYMDMLCy5tWDjYMD"}
+[debug] [2023-12-20T09:02:57.486Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-12-20T09:02:57.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T09:02:57.487Z] > authorizing via signed-in user (tuan.pham.set18@eiu.edu.vn)
+[debug] [2023-12-20T09:02:57.487Z] [iam] checking project project-main-manufacture for permissions ["firebase.projects.get"]
+[debug] [2023-12-20T09:02:57.488Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions [none]
+[debug] [2023-12-20T09:02:57.488Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:02:57.488Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-20T09:02:58.600Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions 200
+[debug] [2023-12-20T09:02:58.601Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-20T09:03:22.680Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/project-main-manufacture/releases pageSize=10&pageToken=
+[debug] [2023-12-20T09:03:23.994Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/project-main-manufacture/releases 200
+[debug] [2023-12-20T09:03:23.994Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/project-main-manufacture/releases {"releases":[{"name":"projects/project-main-manufacture/releases/cloud.firestore","rulesetName":"projects/project-main-manufacture/rulesets/e82027ef-3e61-4ad6-8c65-2fa8bf69c434","createTime":"2023-12-13T05:09:41.317010Z","updateTime":"2023-12-13T05:09:41.317010Z"}]}
+[debug] [2023-12-20T09:03:23.995Z] Found ruleset: projects/project-main-manufacture/rulesets/e82027ef-3e61-4ad6-8c65-2fa8bf69c434
+[debug] [2023-12-20T09:03:23.995Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/project-main-manufacture/rulesets/e82027ef-3e61-4ad6-8c65-2fa8bf69c434 [none]
+[debug] [2023-12-20T09:03:25.050Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/project-main-manufacture/rulesets/e82027ef-3e61-4ad6-8c65-2fa8bf69c434 200
+[debug] [2023-12-20T09:03:25.051Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/project-main-manufacture/rulesets/e82027ef-3e61-4ad6-8c65-2fa8bf69c434 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-20T09:03:31.161Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-12-20T09:03:31.164Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-12-20T09:03:32.424Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-12-20T09:03:32.425Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-12-20T09:03:32.462Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-12-20T09:03:32.462Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/project-main-manufacture/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/project-main-manufacture/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-12-20T09:03:32.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-20T09:03:32.466Z] > authorizing via signed-in user (tuan.pham.set18@eiu.edu.vn)
+[debug] [2023-12-20T09:03:32.466Z] [iam] checking project project-main-manufacture for permissions ["firebase.projects.get"]
+[debug] [2023-12-20T09:03:32.467Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions [none]
+[debug] [2023-12-20T09:03:32.467Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:03:32.467Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-20T09:03:32.820Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions 200
+[debug] [2023-12-20T09:03:32.820Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/project-main-manufacture:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-20T09:03:32.822Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-12-20T09:03:32.823Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:03:32.826Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-12-20T09:03:32.826Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:03:34.166Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com 200
+[debug] [2023-12-20T09:03:34.167Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-12-20T09:03:34.167Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-12-20T09:03:34.167Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:03:34.196Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/runtimeconfig.googleapis.com 200
+[debug] [2023-12-20T09:03:34.196Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-12-20T09:03:35.661Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-12-20T09:03:35.661Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-12-20T09:03:45.675Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-12-20T09:03:45.675Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/project-main-manufacture
+[debug] [2023-12-20T09:03:47.034Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com 200
+[debug] [2023-12-20T09:03:47.035Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/project-main-manufacture/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-20T09:04:55.339Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/project-main-manufacture [none]
+[debug] [2023-12-20T09:04:55.759Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/project-main-manufacture 200
+[debug] [2023-12-20T09:04:55.759Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/project-main-manufacture {"projectId":"project-main-manufacture","projectNumber":"1015318297520","displayName":"Project main manufacture","name":"projects/project-main-manufacture","resources":{"hostingSite":"project-main-manufacture","realtimeDatabaseInstance":"project-main-manufacture-default-rtdb"},"state":"ACTIVE","etag":"1_a905af4d-8070-4b86-abf7-d1ab8096833b"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-20T09:05:47.571Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-20T09:05:47.755Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-20T09:05:47.755Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Study\Web\Project 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=660982340&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-12-20T09:06:01.911Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-12-20T09:06:01.911Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-12-20T09:06:02.592Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-12-20T09:06:02.593Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-12-20T09:06:02.603Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-12-20T09:06:03.112Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-12-20T09:06:03.113Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"MinhTuane","id":148312088,"node_id":"U_kgDOCNcQGA","avatar_url":"https://avatars.githubusercontent.com/u/148312088?v=4","gravatar_id":"","url":"https://api.github.com/users/MinhTuane","html_url":"https://github.com/MinhTuane","followers_url":"https://api.github.com/users/MinhTuane/followers","following_url":"https://api.github.com/users/MinhTuane/following{/other_user}","gists_url":"https://api.github.com/users/MinhTuane/gists{/gist_id}","starred_url":"https://api.github.com/users/MinhTuane/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MinhTuane/subscriptions","organizations_url":"https://api.github.com/users/MinhTuane/orgs","repos_url":"https://api.github.com/users/MinhTuane/repos","events_url":"https://api.github.com/users/MinhTuane/events{/privacy}","received_events_url":"https://api.github.com/users/MinhTuane/received_events","type":"User","site_admin":false,"name":"Minh Tuan","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":8,"public_gists":0,"followers":0,"following":0,"created_at":"2023-10-18T05:46:50Z","updated_at":"2023-11-29T16:56:25Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":93,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as MinhTuane 
+[info] 
+[debug] [2023-12-20T09:06:14.804Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-20T09:06:15.261Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-20T09:06:15.262Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-20T09:06:43.364Z] >>> [apiv2][query] GET https://api.github.com/repos/Project/actions/secrets/public-key type=owner
+[debug] [2023-12-20T09:06:43.813Z] <<< [apiv2][status] GET https://api.github.com/repos/Project/actions/secrets/public-key 404
+[debug] [2023-12-20T09:06:43.813Z] <<< [apiv2][body] GET https://api.github.com/repos/Project/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
